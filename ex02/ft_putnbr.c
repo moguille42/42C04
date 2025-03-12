@@ -6,7 +6,7 @@
 /*   By: moguille <moguille@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 13:06:35 by moguille          #+#    #+#             */
-/*   Updated: 2025/03/12 13:28:38 by moguille         ###   ########.fr       */
+/*   Updated: 2025/03/12 13:39:58 by moguille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,13 @@ unsigned int	ft_ckeck_signed(int nbr)
 	return (-nbr);
 }
 
-void	ft_putnbr(int nbr)
+void	ft_putnbr(int nb)
 {
 	unsigned int	u_nbr;
 	int				divisor;
 	int				quotient;
 
-	u_nbr = ft_ckeck_signed(nbr);
+	u_nbr = ft_ckeck_signed(nb);
 	divisor = 1;
 	while (u_nbr / divisor >= 10)
 		divisor = divisor * 10;
